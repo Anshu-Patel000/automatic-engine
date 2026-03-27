@@ -1,0 +1,92 @@
+{
+  "repo_url": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues",
+  "total_findings": 10,
+  "by_severity": {
+    "critical": 1,
+    "high": 5,
+    "medium": 2,
+    "low": 2
+  },
+  "findings": [
+    {
+      "rule_id": "SEC-HARDCODED-SECRET",
+      "severity": "critical",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\app.py",
+      "line": 3,
+      "message": "Potential hardcoded secret/password found.",
+      "suggestion": "Move secrets to environment variables or a secret manager."
+    },
+    {
+      "rule_id": "PY-DEBUG-PRINT",
+      "severity": "low",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\app.py",
+      "line": 7,
+      "message": "print() statement found in application code.",
+      "suggestion": "Use structured logging instead of print statements."
+    },
+    {
+      "rule_id": "PY-BARE-EXCEPT",
+      "severity": "high",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\app.py",
+      "line": 11,
+      "message": "Bare except detected.",
+      "suggestion": "Catch specific exceptions and log context."
+    },
+    {
+      "rule_id": "CODE-TODO",
+      "severity": "low",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\app.py",
+      "line": 16,
+      "message": "TODO marker found.",
+      "suggestion": "Track work in issues and remove stale TODO comments."
+    },
+    {
+      "rule_id": "AEP-142",
+      "severity": "medium",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\openapi.yaml",
+      "line": 6,
+      "message": "Path '/Orders' contains uppercase characters.",
+      "suggestion": "Use lowercase path segments for consistency."
+    },
+    {
+      "rule_id": "AEP-132",
+      "severity": "high",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\openapi.yaml",
+      "line": 7,
+      "message": "Missing operationId for GET /Orders.",
+      "suggestion": "Add a unique, stable operationId for every operation."
+    },
+    {
+      "rule_id": "AEP-132",
+      "severity": "high",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\openapi.yaml",
+      "line": 12,
+      "message": "Missing operationId for POST /Orders.",
+      "suggestion": "Add a unique, stable operationId for every operation."
+    },
+    {
+      "rule_id": "AEP-142",
+      "severity": "medium",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\openapi.yaml",
+      "line": 23,
+      "message": "Path '/orders/{orderId}' contains uppercase characters.",
+      "suggestion": "Use lowercase path segments for consistency."
+    },
+    {
+      "rule_id": "AEP-132",
+      "severity": "high",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\openapi.yaml",
+      "line": 7,
+      "message": "Missing operationId for GET /orders/{orderId}.",
+      "suggestion": "Add a unique, stable operationId for every operation."
+    },
+    {
+      "rule_id": "AEP-147",
+      "severity": "high",
+      "file": "d:\\MetaSphere\\ms-aep-scanner-scanner\\demo\\github_repo_issue_demo\\sample_repo_with_issues\\openapi.yaml",
+      "line": 14,
+      "message": "GET /orders/{orderId} defines requestBody.",
+      "suggestion": "Remove requestBody from GET and use query/path parameters instead."
+    }
+  ]
+}
