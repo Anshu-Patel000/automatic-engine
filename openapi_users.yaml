@@ -1,0 +1,24 @@
+openapi: 3.0.3
+info:
+  title: Users API
+  version: 1.0.0
+paths:
+  /Users/{userId}:
+    get:
+      summary: Get user
+      parameters:
+        - name: region
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ok
+  /users/{userId}/Addresses:
+    put:
+      summary: Update address
+      operationId: updateUserAddress
+      responses:
+        '200':
+          description: updated
